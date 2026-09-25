@@ -1,0 +1,27 @@
+#!/bin/bash
+
+reset;
+
+echo -e "\n \n \n"
+echo -e "\n"
+echo -e "\n"
+echo -e "\n"
+
+
+echo "===================================="
+echo "== BEDROCK CONNECTOR | v0.1 ALPHA =="
+echo "===================================="
+echo "== 1: Start Backend without LED   =="
+echo "== 2: Start Backend with blinking =="
+echo "===================================="
+
+read -p "Choice > " choice
+case $choice in
+		1) echo -e "Launching: Bedrock Connector Backend Now !!!... ... ." && screen -S bedconnect java -jar BedrockConnect.jar; continue;;
+		2) echo -e "Launching: Bedrock Connector Backend Now !!!... ... . \n LED - SHows Active Status !!!" && screen -S bedconnect python3 start_bedrock.py; continue;;
+		*) echo -e "INVALID !!!"; continue;;
+esac
+
+
+
+#java -jar BedrockConnect.jar 

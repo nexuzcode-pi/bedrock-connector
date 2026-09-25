@@ -1,0 +1,37 @@
+# ============================================================
+# NexuzCraft BedrockConnect
+# ============================================================
+
+port: 19132
+
+bindip: 0.0.0.0
+
+# Custom NexuzCraft server list
+# custom_servers: /opt/bedrockconnect/custom_servers.json
+custom_servers: /opt/bedrockconnect/servers.json
+
+# Allow players to add their own servers
+user_servers: true
+
+# Show BedrockConnect featured servers
+featured_servers: true
+
+# Online authentication
+online_mode: true
+
+# Automatically disconnect inactive clients
+kick_inactive: false
+
+# Fetch current featured server IPs
+fetch_featured_ips: true
+
+fetch_ips: true
+
+# Maximum number of servers
+server_limit: 100
+
+# Database
+db_type: none
+
+# Debug logging
+debug: false
